@@ -47,7 +47,7 @@ function App() {
       <Routes>
         <Route path="profile" element={<Profile token={token} />} />
         <Route path="posts" element={<Posts />} />
-        <Route path="add-post" element={<AddPost />} />
+        <Route path="add-post" element={<AddPost token={token} />} />
         <Route path="single-post" element={<SinglePost />} />
         <Route path="register" element={<Register setToken={setToken} />} />
         <Route path="login" element={<Login setToken={setToken} />} />
